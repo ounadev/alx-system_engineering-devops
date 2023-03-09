@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -avm --include='*.html' --exclude='*' ./ "$(dirname "$(pwd)")"
+rsync -u --exclude '*.txt' --exclude '*.sh' ./*.html ../
