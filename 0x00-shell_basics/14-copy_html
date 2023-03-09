@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -avm --include='*.html' --exclude='*' ./ "$(dirname "$(pwd)")"
