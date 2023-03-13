@@ -1,0 +1,2 @@
+#!/bin/bash
+mapfile -t words < "$1"; declare -A counts; for word in "${words[@]}"; do (( counts["$word"]++ )); done; for word in "${!counts[@]}"; do if (( counts["$word"] == 1 )); then echo "$word"; fi; done | sort
