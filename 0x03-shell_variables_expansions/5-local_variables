@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p | grep -E "^declare -x (BASH|BASHOPTS)=" | cut -d' ' -f3-
+echo declare -p | grep -E "^declare -x (BASH|BASHOPTS)=" | cut -d' ' -f3-
