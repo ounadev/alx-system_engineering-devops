@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "2\n0"
+echo $(echo${BREATH}^${LOVE})
