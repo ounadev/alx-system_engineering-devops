@@ -1,2 +1,2 @@
 #!/bin/bash
-compgen -A variable | compgen -A function
+declare -p | grep -E "^declare -x (BASH|BASHOPTS)=" | cut -d' ' -f3-
