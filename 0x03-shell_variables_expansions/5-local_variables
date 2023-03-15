@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p | grep -vE '^declare -[a-zA-Z]+' | sort; compgen -A function | sort
+declare -p | grep -vE '^declare -[a-zA-Z]+' | compgen -A function | sort
